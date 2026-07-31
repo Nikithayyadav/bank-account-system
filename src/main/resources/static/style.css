@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #f8fafc;
+}
+
+.container {
+    width: 420px;
+}
+
+h2 {
+    text-align: center;
+    color: #38bdf8;
+    font-size: 1.8rem;
+}
+
+.subtitle {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.85rem;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 22px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #334155;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    color: #f1f5f9;
+    margin-bottom: 14px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    background: #0f172a;
+    color: #f8fafc;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #38bdf8;
+}
+
+button {
+    background: #38bdf8;
+    color: #0f172a;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background: #7dd3fc;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+.btn-group {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-withdraw {
+    background: #ef4444;
+    color: #ffffff;
+}
+
+.btn-withdraw:hover {
+    background: #f87171;
+}
+
+.output-card {
+    background: #1e293b;
+    border: 1px solid #38bdf8;
+    padding: 16px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+#msg {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #38bdf8;
+}
+
+#balanceDisplay {
+    font-size: 1.1rem;
+    color: #f8fafc;
+    white-space: pre-line;
+}

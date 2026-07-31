@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Bank Account System</h2>
+        <p class="subtitle">Spring Boot OOP Showcase</p>
+        
+        <!-- Create Account Form -->
+        <div class="card">
+            <h3>Create New Account</h3>
+            <div class="form-group">
+                <input type="text" id="accNumber" placeholder="Account Number (e.g. ACC101)">
+                <input type="text" id="accHolder" placeholder="Account Holder Name">
+                <select id="accType">
+                    <option value="SAVINGS">Savings Account (Min $500 Balance)</option>
+                    <option value="CURRENT">Current Account ($1000 Overdraft)</option>
+                </select>
+                <input type="number" id="initialDeposit" placeholder="Initial Deposit Amount ($)">
+                <button onclick="createAccount()">Create Account</button>
+            </div>
+        </div>
+
+        <!-- Transactions Form -->
+        <div class="card">
+            <h3>Perform Transactions</h3>
+            <div class="form-group">
+                <input type="text" id="transAccNumber" placeholder="Target Account Number">
+                <input type="number" id="transAmount" placeholder="Transaction Amount ($)">
+                <div class="btn-group">
+                    <button onclick="performTransaction('deposit')">Deposit</button>
+                    <button class="btn-withdraw" onclick="performTransaction('withdraw')">Withdraw</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Result / Balance Output Card -->
+        <div id="output" class="output-card" style="display: none;">
+            <p id="msg"></p>
+            <div id="details">
+                <h4 id="balanceDisplay"></h4>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
