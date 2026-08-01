@@ -1,6 +1,6 @@
 package com.proficon.bank.model;
 
-public class CurrentAccount extends BankAccount {
+public class CurrentAccount extends BankAccount { 
 
     private double overdraftLimit = 1000.0;
 
