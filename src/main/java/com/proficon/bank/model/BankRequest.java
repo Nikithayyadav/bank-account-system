@@ -1,7 +1,7 @@
 package com.proficon.bank.model;
 
 public class BankRequest {
-    private String accountNumber;
+    private String accountNumber; 
     private String accountHolderName;
     private String accountType;
     private double amount;
