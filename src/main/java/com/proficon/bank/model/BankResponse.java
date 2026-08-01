@@ -1,6 +1,6 @@
 package com.proficon.bank.model;
 
-public class BankResponse {
+public class BankResponse { 
     private String accountNumber;
     private String accountHolderName;
     private String accountType;
