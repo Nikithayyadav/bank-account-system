@@ -1,6 +1,6 @@
 package com.proficon.bank.model;
 
-public class SavingsAccount extends BankAccount {
+public class SavingsAccount extends BankAccount { 
 
     private double minimumBalance = 500.0;
 
