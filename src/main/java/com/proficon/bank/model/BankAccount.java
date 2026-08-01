@@ -1,6 +1,6 @@
 package com.proficon.bank.model;
 
-public abstract class BankAccount implements TransactionOperations {
+public abstract class BankAccount implements TransactionOperations { 
 
     private String accountNumber; 
     private String accountHolderName;
