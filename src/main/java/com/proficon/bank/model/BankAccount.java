@@ -4,7 +4,7 @@ public abstract class BankAccount implements TransactionOperations {
 
     private String accountNumber; 
     private String accountHolderName;
-    private double balance;
+    private double balance; 
 
     public BankAccount(String accountNumber, String accountHolderName, double initialBalance) {
         this.accountNumber = accountNumber;
