@@ -1,7 +1,7 @@
 package com.proficon.bank.controller;
 
 import org.springframework.web.bind.annotation.*;
-import com.proficon.bank.model.BankRequest; 
+import com.proficon.bank.model.BankRequest;  
 import com.proficon.bank.model.BankResponse;
 import com.proficon.bank.service.BankService;
 
